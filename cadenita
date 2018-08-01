@@ -1,0 +1,17 @@
+var texto = "cadenita";
+var arreglo = [];
+for (i = 0; i < texto.length; i++){
+    arreglo[i] = texto.substring(i,i + 1);
+    if( i % 2 == 0){
+        arreglo[i] = arreglo[i].toUpperCase();
+    } else {
+        arreglo[i] = arreglo[i].toLowerCase();
+    }
+    
+}
+texto = arreglo.toString();
+
+for (i = 0; i < texto.length; i++){
+    texto = texto.replace(",","");
+}
+console.log(texto);
